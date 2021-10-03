@@ -1,0 +1,74 @@
+\ProvidesPackage{../preamble}
+
+\RequirePackage{mathtools}
+\RequirePackage{amsfonts}
+\RequirePackage{enumitem}
+% \RequirePackage[standard]{ntheorem}
+\RequirePackage{amsthm}
+\RequirePackage{tikz}
+\RequirePackage{graphicx}
+\graphicspath{ {./images/} }
+
+\newcommand{\bydef}{\stackrel{\text{по опр.}}{\implies}} % by definition - по определению
+\newcommand{\dn}{\stackrel{\text{об.}}{=}} % denote - обозначим
+\newcommand{\imaginary}{\mathrm{Im} \,}
+\newcommand{\real}{\mathrm{Re} \,}
+\newcommand{\prop}[1]{#1^{\text{o}}}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\C}{\mathbb{C}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+
+\newcommand{\approach}[1]{\underset{#1}{\longrightarrow}}
+\newcommand{\series}[1]{\displaystyle\sum_{k=1}^\infty #1}
+\newcommand{\seriesx}{\displaystyle\sum_{k=1}^\infty x_k}
+\newcommand{\seriespow}{\displaystyle\sum_{k=0}^\infty a_k (x - x_0)^k}
+\newcommand{\abs}[1]{\left|#1\right|}
+\renewcommand{\over}[2]{\stackrel{#1}{#2}}
+
+% \theoremstyle{break}
+
+% --- Теорема --- %
+% \newtheoremstyle{break}% name
+%   {}%         Space above, empty = `usual value'
+%   {}%         Space below
+%   {\itshape}% Body font
+%   {}%         Indent amount (empty = no indent, \parindent = para indent)
+%   {\bfseries}% Thm head font
+%   {.}%        Punctuation after thm head
+%   {\newline}% Space after thm head: \newline = linebreak
+%   {}%         Thm head spec
+% \theorembodyfont{\normalfont}
+% \theoremstyle{break}
+\newtheorem{theorem}{Теорема}[subsection]
+% --------------- %
+
+% --- Определение --- %
+% \theorembodyfont{\normalfont}
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}[subsection]
+% ------------------- %
+
+
+% --- Пример --- %
+\theoremstyle{definition}
+\newtheorem*{example}{Пример}
+% -------------- %
+
+% --- Следствие --- %
+\theoremstyle{definition}
+\newtheorem*{corollary}{Следствие}
+% ----------------- %
+
+% --- Замечание --- %
+\theoremstyle{definition}
+\newtheorem*{remark}{Замечание}
+% ----------------- %
+
+
+% --- Лемма --- %
+\theoremstyle{definition}
+\newtheorem*{lemma}{Лемма}
+% ----------------- %
